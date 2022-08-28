@@ -3,12 +3,12 @@ public class MergeSortAlg : ISortAlg
 
   public int[] Sort(int[] inputArr)
   {
-    int inputArrLength = inputArr.Length;
-    if (inputArr is null || inputArrLength <= 1)
+    if (inputArr is null || inputArr.Length <= 1)
     {
       return inputArr;
     }
 
+    int inputArrLength = inputArr.Length;
     int[] inputArrCopy = new int[inputArrLength];
     Array.Copy(inputArr, inputArrCopy, inputArrLength);
 
